@@ -8,7 +8,7 @@
 
 A comprehensive, organized collection of **12 Machine Learning Laboratory Experiments** demonstrating practical applications of machine learning, time-series forecasting, and unsupervised anomaly detection in **Cybersecurity and Network Defense**.
 
-Each experiment is provided in both **Jupyter Notebook (`.ipynb`)** format for interactive exploration and **Python Script (`.py`)** format for direct terminal execution.
+All 12 laboratory experiments are provided as clean, self-contained **Jupyter Notebooks (`exp1.ipynb` to `exp12.ipynb`)** ready to run in Jupyter Lab, Jupyter Notebook, VS Code, or Google Colab.
 
 ---
 
@@ -28,20 +28,20 @@ This repository serves as a hands-on laboratory manual and codebase for undergra
 
 ## 📋 Experiments Index
 
-| Exp # | Experiment Title | Model / Algorithm | Cybersecurity Domain | Primary Files |
+| Exp # | Experiment Title | Model / Algorithm | Cybersecurity Domain | Notebook File |
 | :---: | :--- | :--- | :--- | :--- |
-| **01** | Network Traffic Analysis & Seasonal Decomposition | Additive Seasonal Decomposition (`statsmodels`) | Network Baseline & Profiling | [`exp1.ipynb`](exp1.ipynb), [`exp1.py`](exp1.py) |
-| **02** | DDoS Anomaly Detection & Traffic Forecasting | ARIMA Time Series Forecasting | DDoS & Volumetric Surge Detection | [`exp2.ipynb`](exp2.ipynb), [`exp2.py`](exp2.py) |
-| **03** | Multi-Class Cyber-Attack Classification | Random Forest Classifier | Intrusion Detection (IDS) | [`exp3.ipynb`](exp3.ipynb), [`exp3.py`](exp3.py) |
-| **04** | Malicious & Phishing URL Classification | TF-IDF Character n-grams + Logistic Regression | Web & URL Threat Filtering | [`exp4.ipynb`](exp4.ipynb), [`exp4.py`](exp4.py) |
-| **05** | Phishing URL Detection via Lexical Features | Linear Support Vector Machine (`LinearSVC`) | Web Security & Phishing Defense | [`exp5.ipynb`](exp5.ipynb), [`exp5.py`](exp5.py) |
-| **06** | Unsupervised URL Anomaly Detection | Isolation Forest | Zero-Day & Obfuscation Detection | [`exp6.ipynb`](exp6.ipynb), [`exp6.py`](exp6.py) |
-| **07** | Handwritten Digit Recognition & Visual Security | Random Forest Classifier | CAPTCHA Breaking & OCR Security | [`exp7.ipynb`](exp7.ipynb), [`exp7.py`](exp7.py) |
-| **08** | Email Spoofing & Phishing Header Analysis | Random Forest Classifier | Email Authentication (SPF/DKIM/DMARC) | [`exp8.ipynb`](exp8.ipynb), [`exp8.py`](exp8.py) |
-| **09** | Spam & Phishing Email Text Classification | TF-IDF Vectorizer + Multinomial Naive Bayes | Social Engineering & Spam Filtering | [`exp9.ipynb`](exp9.ipynb), [`exp9.py`](exp9.py) |
-| **10** | Network Intrusion & Event Clustering | K-Means Clustering + `StandardScaler` | Unsupervised Network Profiling | [`exp10.ipynb`](exp10.ipynb), [`exp10.py`](exp10.py) |
-| **11** | SQL Injection (SQLi) Query Detection | Decision Tree Classifier | Web Application & Database Defense | [`exp11.ipynb`](exp11.ipynb), [`exp11.py`](exp11.py) |
-| **12** | Wireless Sensor Network (WSN) Attack Detection | Random Forest Classifier | IoT & Wireless Sensor Security | [`exp12.ipynb`](exp12.ipynb), [`exp12.py`](exp12.py) |
+| **01** | Network Traffic Analysis & Seasonal Decomposition | Additive Seasonal Decomposition (`statsmodels`) | Network Baseline & Profiling | [`exp1.ipynb`](exp1.ipynb) |
+| **02** | DDoS Anomaly Detection & Traffic Forecasting | ARIMA Time Series Forecasting | DDoS & Volumetric Surge Detection | [`exp2.ipynb`](exp2.ipynb) |
+| **03** | Multi-Class Cyber-Attack Classification | Random Forest Classifier | Intrusion Detection (IDS) | [`exp3.ipynb`](exp3.ipynb) |
+| **04** | Malicious & Phishing URL Classification | TF-IDF Character n-grams + Logistic Regression | Web & URL Threat Filtering | [`exp4.ipynb`](exp4.ipynb) |
+| **05** | Phishing URL Detection via Lexical Features | Linear Support Vector Machine (`LinearSVC`) | Web Security & Phishing Defense | [`exp5.ipynb`](exp5.ipynb) |
+| **06** | Unsupervised URL Anomaly Detection | Isolation Forest | Zero-Day & Obfuscation Detection | [`exp6.ipynb`](exp6.ipynb) |
+| **07** | Handwritten Digit Recognition & Visual Security | Random Forest Classifier | CAPTCHA Breaking & OCR Security | [`exp7.ipynb`](exp7.ipynb) |
+| **08** | Email Spoofing & Phishing Header Analysis | Random Forest Classifier | Email Authentication (SPF/DKIM/DMARC) | [`exp8.ipynb`](exp8.ipynb) |
+| **09** | Spam & Phishing Email Text Classification | TF-IDF Vectorizer + Multinomial Naive Bayes | Social Engineering & Spam Filtering | [`exp9.ipynb`](exp9.ipynb) |
+| **10** | Network Intrusion & Event Clustering | K-Means Clustering + `StandardScaler` | Unsupervised Network Profiling | [`exp10.ipynb`](exp10.ipynb) |
+| **11** | SQL Injection (SQLi) Query Detection | Decision Tree Classifier | Web Application & Database Defense | [`exp11.ipynb`](exp11.ipynb) |
+| **12** | Wireless Sensor Network (WSN) Attack Detection | Random Forest Classifier | IoT & Wireless Sensor Security | [`exp12.ipynb`](exp12.ipynb) |
 
 ---
 
@@ -141,28 +141,15 @@ pip install -r requirements.txt
 
 ## 💻 How to Run the Experiments
 
-### Option A: Using Jupyter Notebooks
-Launch the Jupyter Notebook interface:
+Launch Jupyter Notebook or Jupyter Lab from the project root:
 ```bash
 jupyter notebook
 ```
-Navigate to any notebook (e.g., `exp1.ipynb` through `exp12.ipynb`) and select **Cell -> Run All**.
+Navigate to any experiment notebook (e.g., `exp1.ipynb` through `exp12.ipynb`) and select **Cell -> Run All** or run individual cells with `Shift + Enter`.
 
-### Option B: Using Python Terminal Scripts
-Each experiment can also be executed directly as a standalone Python script:
-```bash
-# Run Experiment 1 (Network Traffic Seasonal Decomposition)
-python exp1.py
-
-# Run Experiment 3 (Cyber Attack Classification)
-python exp3.py
-
-# Run Experiment 11 (SQL Injection Detection)
-python exp11.py
-
-# Or run from the python_scripts directory:
-python python_scripts/exp8.py
-```
+You can also run the notebooks in:
+- **VS Code**: Install the Jupyter extension and open any `exp*.ipynb` file.
+- **Google Colab**: Upload the notebook and accompanying sample CSV files (`urlset.csv`, `PhiUSIIL_Phishing_URL_Dataset.csv`).
 
 ---
 
@@ -183,10 +170,6 @@ MachineLearning-lab-experiments/
 ├── exp10.ipynb                        # Exp 10: Network Event K-Means Clustering
 ├── exp11.ipynb                        # Exp 11: SQL Injection Detection
 ├── exp12.ipynb                        # Exp 12: Wireless Sensor Network Defense
-│
-├── exp1.py ... exp12.py               # Standalone Python scripts (exp1 to exp12)
-├── python_scripts/                    # Dedicated folder with all Python scripts
-│   ├── exp1.py ... exp12.py
 │
 ├── urlset.csv                         # Sample dataset for Exp 4
 ├── PhiUSIIL_Phishing_URL_Dataset.csv   # Sample dataset for Exp 5 & 6
